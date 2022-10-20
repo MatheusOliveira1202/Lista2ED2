@@ -1,0 +1,82 @@
+Questão 2
+
+🅲🅾🅼🅿🅰🆁🅰🅲🅰🅾 1
+
+-----> O(n) em C#:
+
+    public static void Main(String[] args)
+    {
+        int i, n = 8; //O(1)
+        for (i = 1; i <= n; i++) { //O(n)
+            Console.Write("Hello World !!!\n"); //O(1)
+        }
+    }
+}
+
+cálculo da complexidade: O(1) + O(n) + O(1) = O(n) 
+
+-----> O(n) em C:
+
+void main()
+{
+    int i, n = 8; //O(1)
+    for (i = 1; i <= n; i=i*2) { //O(n) 
+        printf("Hello World !!!\n");  //O(1)
+    }
+}
+
+cálculo da complexidade: O(1) + O(n) + O(1) = O(n) 
+
+Os dois códigos têm a mesma complexidade.
+
+🅲🅾🅼🅿🅰🆁🅰🅲🅰🅾 2
+
+-----> O(n) em Python:
+
+n = 8 //O(1)
+for i in range(1, n + 1): //O(n)
+    print("Hello World !!!") //O(1)
+
+cálculo da complexidade: O(1) + O(n) + O(1) = O(n) 
+
+-----> O(n) em Javascript:
+
+<script>
+ 
+        var i, n = 8; //O(1)
+        for (i = 1; i <= n; i++) { //O(n)
+            document.write("Hello World !!!<br/>"); //O(1)
+        }
+ 
+</script>
+
+cálculo da complexidade: O(1) + O(n) + O(1) = O(n) 
+
+Os dois códigos têm a mesma complexidade.
+
+🅲🅾🅼🅿🅰🆁🅰🅲🅰🅾 3
+
+-----> O(1) em C#:
+
+    static public void Main (){
+ 
+        // Code
+          Console.WriteLine("Hello World"); //O(1)
+    }
+}
+
+cálculo da complexidade: O(1)
+
+-----> O(n) em Java:
+
+class Main {
+  public static void main(String[] args) {
+    String ola = "Hello world!"; //O(1)
+    for(int i = 0; i < ola.length(); i++) //O(n)
+      System.out.println(ola.charAt(i)); //O(1)
+  }
+}
+
+cálculo da complexidade: O(1) + O(n) + O(1) = O(n) 
+
+Os dois códigos fazem a mesma coisa (mostrar uma frase) porém um deles mostra de forma vertical, letra por letra, percorrendo a string.
