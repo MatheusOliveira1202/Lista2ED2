@@ -1,0 +1,232 @@
+repositório : https://github.com/MatheusOliveira1202/Lista2ED2
+
+linguagens : 
+-java X
+-c# X
+-python X
+-C X
+-C++ X
+-php X
+-javascript X
+-R X
+-swift X
+-kotlin X
+
+
+
+----> Código O(1) em Swift
+
+func swiftO1{
+
+let arrOne = [1, 2, 3, 4, 5, 6]
+arrOne[0]
+arrOne[2]
+
+}
+
+
+----> Código O(n) em Kotlin
+
+fun kotlinOn{
+
+for (int i = 0; i < n; i++) {
+    println("Your output is " + i);
+
+}
+
+
+
+-----> Código O(log n ) em R
+
+bin_search <- function (v, t) {
+      lo <- 1
+      hi <- length(v)
+      while (lo <= hi) {
+            mid = round((lo + hi) / 2)
+            
+            if (abs(v[mid] - t) <= 0 ) {
+                  return(mid)
+                  break
+            } else if (v[mid] < t) {
+                  lo = mid + 1
+            } else {
+                  hi = mid - 1
+            }
+      }
+}
+
+
+-----> Código O(n^2) em Python
+
+def quadratic_algo(items):
+    for item in items:
+        for item2 in items:
+            print(item, ' ' ,item2)
+
+quadratic_algo([4, 5, 6, 8])
+
+
+-----> Código O(n) em C
+
+void main()
+{
+    int i, n = 8;
+    for (i = 1; i <= n; i=i*2) {
+        printf("Hello World !!!\n");
+    }
+}
+
+-----> Código O(n^2) em PHP
+
+<?php
+function bubble_Sort($my_array )
+{
+	do
+	{
+		$swapped = false;
+		for( $i = 0, $c = count( $my_array ) - 1; $i < $c; $i++ )
+		{
+			if( $my_array[$i] > $my_array[$i + 1] )
+			{
+				list( $my_array[$i + 1], $my_array[$i] ) =
+						array( $my_array[$i], $my_array[$i + 1] );
+				$swapped = true;
+			}
+		}
+	}
+	while( $swapped );
+return $my_array;
+}
+?>
+
+-----> Código O(n) em C++
+ 
+int main()
+{
+ 
+    int i, n = 8;
+    for (i = 1; i <= n; i=i*2) {
+        cout << "Hello World !!!\n";
+    }
+    return 0;
+}
+
+
+-----> Código O(n) em JavaScript
+
+const findIndex = (items, match) => {
+  for (let i = 0, total = items.length; i < total; i++)
+    if (items[i] == match)
+      return i;
+   return -1;
+};
+
+-----> Código O(1) em C#
+
+   static public void Main (){
+ 
+        // Code
+          Console.WriteLine("Hello World");
+    }
+}
+
+
+-----> Código O(n log n) em Java
+
+for (int i = 1; i <= n; i++){
+    for(int j = 1; j < n; j = j * 2) {
+        System.out.println("Hey - I'm busy looking at: " + i + " and " + j);
+    }
+}
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Questão 2
+
+🅲🅾🅼🅿🅰🆁🅰🅲🅰🅾 1
+
+-----> O(n) em C#:
+
+    public static void Main(String[] args)
+    {
+        int i, n = 8; //O(1)
+        for (i = 1; i <= n; i++) { //O(n)
+            Console.Write("Hello World !!!\n"); //O(1)
+        }
+    }
+}
+
+cálculo da complexidade: O(1) + O(n) + O(1) = O(n) 
+
+-----> O(n) em C:
+
+void main()
+{
+    int i, n = 8; //O(1)
+    for (i = 1; i <= n; i=i*2) { //O(n) 
+        printf("Hello World !!!\n");  //O(1)
+    }
+}
+
+cálculo da complexidade: O(1) + O(n) + O(1) = O(n) 
+
+Os dois códigos têm a mesma complexidade.
+
+🅲🅾🅼🅿🅰🆁🅰🅲🅰🅾 2
+
+-----> O(n) em Python:
+
+n = 8 //O(1)
+for i in range(1, n + 1): //O(n)
+    print("Hello World !!!") //O(1)
+
+cálculo da complexidade: O(1) + O(n) + O(1) = O(n) 
+
+-----> O(n) em Javascript:
+
+<script>
+ 
+        var i, n = 8; //O(1)
+        for (i = 1; i <= n; i++) { //O(n)
+            document.write("Hello World !!!<br/>"); //O(1)
+        }
+ 
+</script>
+
+cálculo da complexidade: O(1) + O(n) + O(1) = O(n) 
+
+Os dois códigos têm a mesma complexidade.
+
+🅲🅾🅼🅿🅰🆁🅰🅲🅰🅾 3
+
+-----> O(1) em C#:
+
+    static public void Main (){
+ 
+        // Code
+          Console.WriteLine("Hello World"); //O(1)
+    }
+}
+
+cálculo da complexidade: O(1)
+
+-----> O(n) em Java:
+
+class Main {
+  public static void main(String[] args) {
+    String ola = "Hello world!"; //O(1)
+    for(int i = 0; i < ola.length(); i++) //O(n)
+      System.out.println(ola.charAt(i)); //O(1)
+  }
+}
+
+cálculo da complexidade: O(1) + O(n) + O(1) = O(n) 
+
+Os dois códigos fazem a mesma coisa (mostrar uma frase) porém um deles mostra de forma vertical, letra por letra, percorrendo a string.
